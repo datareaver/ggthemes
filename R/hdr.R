@@ -1,3 +1,7 @@
+#' @include ggthemes-package.R
+#' @include ggthemes-data.R
+NULL
+
 #' HDR Consulting Theme
 #'
 #' Theme based on HDR Marketing Color Scheme and HDR Consulting Team preferences.
@@ -8,6 +12,7 @@
 #'
 #' @inheritParams ggplot2::theme_grey
 #' @family themes hdr
+#' @export
 #' @examples
 #' library("ggplot2")
 #' p <- ggplot(mtcars) +
@@ -15,7 +20,6 @@
 #'      facet_wrap(~am) +
 #'      ggtitle('Diamond Prices')
 #' p + scale_colour_hdr() + theme_hdr()
-#' @export
 theme_hdr <- function(base_size = 16,
                       base_family = "mono") {
     
@@ -66,7 +70,7 @@ hdr_pal <- function() {
     }
 }
 
-#' hdr color scales
+#' HDR color scales
 #'
 #' Color scales using the colors in the HDR graphics.
 #'

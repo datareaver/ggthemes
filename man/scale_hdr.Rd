@@ -4,7 +4,7 @@
 \alias{scale_color_hdr}
 \alias{scale_colour_hdr}
 \alias{scale_fill_hdr}
-\title{hdr color scales}
+\title{HDR color scales}
 \usage{
 scale_colour_hdr(...)
 
