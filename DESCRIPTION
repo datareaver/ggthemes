@@ -9,6 +9,7 @@ Authors@R: c(person("Jeffrey B.", "Arnold", role = c("aut", "cre"),
     person("Joshua", "Kunst", role = "ctb"),
     person("Baptise", "Auguie", role = "ctb"),
     person("Bob", "Rudis", role = "ctb"),
+    person("Thomas", "Roh", role = "ctb"),
     person("Hadley", "Wickham", role = c("ctb", "cph"),
     comment = "Code from the ggplot2 package."),
     person("Justin",  "Talbot", role = "ctb",
@@ -58,6 +59,7 @@ Collate:
     'geom-rangeframe.R'
     'geom-tufteboxplot.R'
     'hc.R'
+    'hdr.R'
     'igray.R'
     'pander.R'
     'scale-tufte.R'
