@@ -20,31 +20,36 @@ NULL
 #'      facet_wrap(~am) +
 #'      ggtitle('Diamond Prices')
 #' p + scale_colour_hdr() + theme_hdr()
-theme_hdr <- function(base_size = 16,
-                      base_family = "mono") {
+theme_hdr <- function(base_size = 20,
+                      base_family = "sans") {
     
     base_color <- hdr_pal()(7)[[7]]
     (theme_foundation(base_size = base_size, base_family = base_family) +
         theme(line = element_line(linetype = 1, colour = base_color),
-              rect = element_rect(fill = "white", linetype = 0, colour = NA),
+              rect = element_rect(fill = "#e4e4e4", linetype = 0, colour = NA), #solarized white 
               text = element_text(colour = "black"),
               title = element_text(family = base_family,size = rel(1.5)),
               axis.text = element_text(face = "bold", size = rel(1)),
               axis.line = element_line(),
+              axis.line.x = element_line(size = 1,lineend="square",color = "black"),
+              axis.ticks.x = element_line(size = 1,lineend = "square",color = "black"),
+              axis.line.y = element_blank(),
               legend.background = element_rect(),
+              legend.title = element_text(size = rel(1.1)),
+              legend.text = element_text(size = rel(1.1)),
+              legend.text.align = 0,
               legend.position = "right",
               legend.direction = "vertical",
               legend.box = "vertical",
-              panel.border = element_rect(colour = base_color,linetype = 1),
+              legend.box.just = "top",
               panel.grid = element_line(colour = base_color, linetype = 1),
               panel.grid.major = element_line(colour = base_color),
               panel.grid.major.x = element_blank(),
               panel.grid.minor.x = element_blank(),
-              panel.grid.minor.y = element_line(colour = base_color,linetype = 6),
+              panel.grid.minor.y = element_blank(),
               plot.title = element_text(hjust = 0, face = "bold"),
               plot.margin = unit(c(1, 1, 1, 1), "lines"),
-              #plot.background = element_rect(color = "black",linetype=1)))#,
-              strip.background = element_rect()))
+              strip.background = element_blank()))
 }
 
 #' HDR color palette

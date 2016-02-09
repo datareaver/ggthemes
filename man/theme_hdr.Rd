@@ -4,7 +4,7 @@
 \alias{theme_hdr}
 \title{HDR Consulting Theme}
 \usage{
-theme_hdr(base_size = 16, base_family = "mono")
+theme_hdr(base_size = 20, base_family = "sans")
 }
 \arguments{
 \item{base_size}{base font size}
