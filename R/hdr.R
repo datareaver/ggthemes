@@ -26,7 +26,7 @@ theme_hdr <- function(base_size = 20,
     base_color <- hdr_pal()(7)[[7]]
     (theme_foundation(base_size = base_size, base_family = base_family) +
         theme(line = element_line(linetype = 1, colour = base_color),
-              rect = element_rect(fill = "#e4e4e4", linetype = 0, colour = NA), #solarized white 
+              rect = element_rect(fill = "white", linetype = 0, colour = NA), #e4e4e4#solarized white 
               text = element_text(colour = "black"),
               title = element_text(family = base_family,size = rel(1.5)),
               axis.text = element_text(face = "bold", size = rel(1)),
