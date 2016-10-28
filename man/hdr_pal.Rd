@@ -14,6 +14,10 @@ library("scales")
 show_col(hdr_pal()(7))
 }
 \seealso{
-Other colour hdr: \code{\link{scale_colour_hdr}}
+Other colour hdr: \code{\link{hdr_pal_bright}},
+  \code{\link{hdr_pal_moderate}},
+  \code{\link{hdr_pal_neutral}},
+  \code{\link{hdr_pal_primary}},
+  \code{\link{scale_colour_hdr}}
 }
 

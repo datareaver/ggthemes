@@ -83,7 +83,7 @@ hdr_pal <- function() {
 #' @export
 #' @examples
 #' library("scales")
-#' show_col(hdr_pal()(3))
+#' show_col(hdr_pal_primary()(3))
 hdr_pal_primary <- function() {
   function(n) {
     hdr.colors <- list(grey = "#54585A",
@@ -102,7 +102,7 @@ hdr_pal_primary <- function() {
 #' @export
 #' @examples
 #' library("scales")
-#' show_col(hdr_pal()(3))
+#' show_col(hdr_pal_neutral()(3))
 hdr_pal_neutral <- function() {
   function(n) {
     hdr.colors <- list(gold = "#A69F88",
@@ -122,7 +122,7 @@ hdr_pal_neutral <- function() {
 #' @export
 #' @examples
 #' library("scales")
-#' show_col(hdr_pal()(6))
+#' show_col(hdr_pal_bright()(6))
 hdr_pal_bright <- function() {
   function(n) {
     hdr.colors <- list(blue = "#004C97",
@@ -145,7 +145,7 @@ hdr_pal_bright <- function() {
 #' @export
 #' @examples
 #' library("scales")
-#' show_col(hdr_pal()(6))
+#' show_col(hdr_pal_moderate()(6))
 hdr_pal_moderate <- function() {
   function(n) {
     hdr.colors <- list(blue = "#01426A",

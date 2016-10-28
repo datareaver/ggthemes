@@ -22,6 +22,9 @@ Color scales using the colors in the HDR graphics.
 \seealso{
 \code{\link{theme_hdr}} for examples.
 
-Other colour hdr: \code{\link{hdr_pal}}
+Other colour hdr: \code{\link{hdr_pal_bright}},
+  \code{\link{hdr_pal_moderate}},
+  \code{\link{hdr_pal_neutral}},
+  \code{\link{hdr_pal_primary}}, \code{\link{hdr_pal}}
 }
 
