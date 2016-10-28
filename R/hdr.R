@@ -22,11 +22,11 @@ NULL
 #' p + scale_colour_hdr() + theme_hdr()
 theme_hdr <- function(base_size = 20,
                       base_family = "sans") {
-    
+
     base_color <- hdr_pal()(7)[[7]]
     (theme_foundation(base_size = base_size, base_family = base_family) +
         theme(line = element_line(linetype = 1, colour = base_color),
-              rect = element_rect(fill = "white", linetype = 0, colour = NA), #e4e4e4#solarized white 
+              rect = element_rect(fill = "white", linetype = 0, colour = NA), #e4e4e4#solarized white
               text = element_text(colour = "black"),
               title = element_text(family = base_family,size = rel(1.5)),
               axis.text = element_text(face = "bold", size = rel(1)),
@@ -73,6 +73,90 @@ hdr_pal <- function() {
     colors <- unlist(hdr.colors)
     unname(colors[seq_len(n)])
     }
+}
+
+#' HDR Primary color palette
+#'
+#' The primary HDR color palette contains grey, blue, red
+#'
+#' @family colour hdr
+#' @export
+#' @examples
+#' library("scales")
+#' show_col(hdr_pal()(3))
+hdr_pal_primary <- function() {
+  function(n) {
+    hdr.colors <- list(grey = "#54585A",
+                       blue = "#4298B5",
+                       red = "#C8102E")
+    colors <- unlist(hdr.colors)
+    unname(colors[seq_len(n)])
+  }
+}
+
+#' HDR Neutral color palette
+#'
+#' The Neutral HDR color palette contains gold, silver, black
+#'
+#' @family colour hdr
+#' @export
+#' @examples
+#' library("scales")
+#' show_col(hdr_pal()(3))
+hdr_pal_neutral <- function() {
+  function(n) {
+    hdr.colors <- list(gold = "#A69F88",
+                       silver = "#A8A99E",
+                       black = "#000000")
+    colors <- unlist(hdr.colors)
+    unname(colors[seq_len(n)])
+  }
+}
+
+#' HDR Bright color palette
+#'
+#' The Bright HDR color palette contains blue, green, yellow, orange, magenta,
+#' purple
+#'
+#' @family colour hdr
+#' @export
+#' @examples
+#' library("scales")
+#' show_col(hdr_pal()(6))
+hdr_pal_bright <- function() {
+  function(n) {
+    hdr.colors <- list(blue = "#004C97",
+                       green = "#78BE20",
+                       yellow = "#FFC600",
+                       orange = "#FF8200",
+                       magenta = "#CE0058",
+                       purple = "#772583")
+    colors <- unlist(hdr.colors)
+    unname(colors[seq_len(n)])
+  }
+}
+
+#' HDR Moderate color palette
+#'
+#' The Moderate HDR color palette contains blue, red, yellow, green, orange,
+#' purple
+#'
+#' @family colour hdr
+#' @export
+#' @examples
+#' library("scales")
+#' show_col(hdr_pal()(6))
+hdr_pal_moderate <- function() {
+  function(n) {
+    hdr.colors <- list(blue = "#01426A",
+                       red = "#A72B2A",
+                       yellow = "#FFC600",
+                       green = "#4A7729",
+                       orange = "#E87722",
+                       purple = "#5D3754")
+    colors <- unlist(hdr.colors)
+    unname(colors[seq_len(n)])
+  }
 }
 
 #' HDR color scales
